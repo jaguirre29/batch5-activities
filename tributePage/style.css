@@ -1,0 +1,75 @@
+body {
+    background: linear-gradient(120deg,#3b5998, #ffffff);
+    margin: auto 0px;
+    padding: 30px;
+}
+
+#main {
+    background-color: #E1E8ED;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#img-div {
+    background-color: white;
+    border-radius: 30px;
+    margin: auto;
+    width: 60%;
+}
+
+#image {
+    display: block;
+    margin: 40px auto 20px auto;
+    max-width: 100%;
+    border-radius: 30px;
+}
+
+figure {
+    margin: auto;
+    padding: 5px;
+    width: 90%;
+}
+
+figcaption {
+    margin-bottom: 20px;
+}
+
+#tribute-info {
+    margin-bottom: 20px;
+}
+
+.link-text {
+    font-weight: bolder;
+    margin: 0 auto 10px auto;
+    text-align: center;
+    width: 80%;
+}
+
+#tribute-link {
+    text-decoration: none;
+}
+
+
+h1,h2,p {
+  text-align: center;
+}
+
+h1 {
+    font-family: "Great Vibes", cursive;
+    font-size: 68px;
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-family: "Merriweather", serif;
+    font-size: 25px;
+}
+
+ul {
+    margin: auto;
+    max-width: 550px;
+}
+
+li {
+    margin: 15px 0;
+}

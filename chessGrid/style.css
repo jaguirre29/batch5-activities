@@ -1,0 +1,26 @@
+body {
+    border: 2px solid black;
+    box-sizing: content-box;
+    margin: 3em auto;
+    width: 50vw;
+}
+
+.chessBoard {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    width: 50vw;
+    height:50vw;
+}
+
+.white-box {
+    background-color: peachpuff;
+    font-size: 5vw;
+    text-align: center;
+}
+
+.black-box {
+    background-color: brown;
+    font-size: 5vw;
+    text-align: center;
+}
