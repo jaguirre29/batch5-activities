@@ -4,6 +4,9 @@ You can use the [editor on GitHub](https://github.com/jaguirre29/batch5-activiti
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
+View io page [here](https://jaguirre29.github.io/batch5-activities/)
+
+** Activites **
 - [Today I Learned](/todayILearned/index.html)
 - [Letter Activity](/htmlEmail/index.html)
 - [Tribute Page](/tributePage/index.html)
