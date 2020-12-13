@@ -1,0 +1,132 @@
+html, body {
+  background-color: black;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  color: white;
+  padding: 0px;
+  margin: 0px;
+}
+#header-image {
+  display: fixed;
+  max-width: 100%;
+  width: 450px;
+  height: 100px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  margin-left: 220px;
+  float: left;
+}
+header nav ul {
+  list-style-type: none;
+  max-width: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-color: #444444;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+
+header li a {
+  display: block;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  margin: 0px;
+  padding: 20px 80px;
+  text-decoration: none;
+}
+header li a:hover {
+  background-color: #333333;
+}
+h2 {
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  margin-top: 70px;
+} 
+h3 {
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+}
+#video {
+  margin: 60px;
+  display: flex;
+  justify-content: center;
+}
+iframe {
+  max-width: 950px;
+  width: 100%;
+  height: 532px;
+  max-height: 100%;
+}
+#form {
+  text-align: center;
+  margin-bottom: 50px;
+}
+#product-image {
+  float: right;
+}
+@media screen and (max-width: 833px) {
+  #product-image {
+    width: 40%;
+  }
+  #header-image {
+    width: 40%;
+    height: 40%;
+    margin-left: 120px;
+    margin-right: 50px;
+  }
+  header li a {
+    padding: 10px 30px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #product-image {
+    width: 40%;
+  }
+  #header-image {
+    width: 40%;
+    height: 40%;
+    margin-left: 120px;
+    margin-right: 50px;
+  }
+}
+#overview li {
+  margin: 10px;
+}
+.btn {
+  border-width: 0;
+  outline: none;
+  border-radius: 2px;
+  background-color: #444444;
+  color: white;
+  height: 29px;
+  width: 90px;
+  cursor: pointer;
+}
+.input-field {
+  height: 26px;
+  border-radius: 2px;
+  border-width: 0;
+  outline: none;
+}
+
+@media screen and (max-width: 321px) {
+  #header-image {
+    margin-left: 90px;
+  }
+}
+@media (width: 600px) {
+  .input-field {
+    width: 16%;
+  }
+  .btn {
+    width: 12%;
+  }
+}

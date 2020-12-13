@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 
+    
+        Survey Form activity from Avion by Jeungardo Aguirre
+        User Story #1: As a user, I want to see a title with id="title" in H1 sized text.
+        User Story #2: As a user, I want to see a short explanation with id="description" in P sized text.
+        User Story #3: As a user, I want to see a form with id="survey-form".
+        User Story #4: As a user, I want to be required to enter my name in a field with id="name" . (Inside form element)
+        User Story #5: As a user, I want to be required to enter an email in a field with id="email" . (Inside form element)
+        User Story #6: As a user, I want to see a validation error if I enter an email that is not formatted correctly.
+        User Story #7: As a user, I should be able to enter a number in a field with id="number" .
+        User Story #8: As a user, if I enter non-numbers in the number input, I want to see an HTML5 validation error .
+        User Story #9: As a user, if I enter numbers outside the range of the number input, which are defined by the min and max attributes, I will see an HTML5 validation error .
+        User Story #10: For the name, email, and number input fields inside the form I can see corresponding labels that describe
+        User Story #11: For the name, email, and number input fields, I want to see placeholder text that gives me a description or instructions for each field.
+        User Story #12: Inside the form element, I want a select an option from a dropdown that has a corresponding id="dropdown" .
+        User Story #13: Inside the form element, I want to select a field from one or more groups of radio buttons. Each group should be grouped using the name attribute .
+        User Story #14: Inside the form element, I want to select several fields from a series of checkboxes, each of which must have a value attribute.
+        User Story #15: Inside the form element, I want to see a textarea at the end for additional comments.
+        User Story #16: Inside the form element, I want to see a button with id="submit" to submit all my inputs.
+        User Story #17: I can submit my inputs to the address bar.
+
+    -->
+
+    <form id="survey-form">
+        <h1 id="title"> Survey Form </h1>
+         <p id="description"> Tell me about yourself </p>
+         
+       <div id="survey-form">
+         <label for="name" id="name-label" class="labels"> Name: </label> 
+           <div class="right">
+             <input type="text" id="name" placeholder="Enter your name here" class="input" required> 
+           </div>
+         <br> </br>
+         <label for="email" id="email-label" class="labels"> Email: </label>
+         <div class="right">
+           <input type="email" id="email" class="input" required placeholder="Enter your email here">
+         </div>
+         <br> </br>
+         <label for="number" id="number-label" class="labels">  Age: </label>
+       <div class="right">
+         <input id="number" class="input" min="1" max="120" type="number" placeholder="Enter your age here">
+       </div>
+       <br></br> 
+       <!-- dropdown -->
+       <label for="food" class="labels"> Favorite Food:</label>
+       <div class="right">
+         <select id="dropdown" name="food" class="input ">
+           <option disabled value="select"> Select an option </option>
+           <option value="pizza"> Pizza </option>
+           <option value="salad"> Salad </option>
+           <option value="fried-rice"> Fried Rice </option>
+         </select>
+       </div>
+       <br> </br>
+       
+       <!-- radio buttons -->
+       <label class="labels" for="radio" > Waffles or Pancakes? </label>
+       <ul class="right" style="list-style: none;">
+         <li class="radio"> <input name="radio-buttons" value="1" type="radio"><label> Waffles</label></input> </li>
+         <li class="radio"><input name="radio-buttons" value="2" type="radio"><label> Pancakes</label></input></li>
+       </ul>
+       
+       <!-- checkbox -->
+       <label for="sports" class="labels"> What sport(s) do you play/do? (check all that apply)</label>
+       <ul id="sports" style="list-style: none" class="right" >
+         <li class="checkbox"><label><input type="checkbox" id="basketball" value="1"> Basketball </label></input></li>
+         <li class="checkbox"><label><input type="checkbox" id="soccer" value="2"> Soccer </label></input></li>
+         <li class="checkbox"><label><input type="checkbox" id="baseball" value="3"> Baseball/Softball </label></input></li>
+         <li class="checkbox"><label><input type="checkbox" id="badminton"value="4"> Badminton </label></input></li>
+         <li class="checkbox"><label><input type="checkbox" id="football" value="5"> Football </label></input></li>
+         <li class="checkbox"><label><input type="checkbox" id="taekwondo" value="6"> Taekwondo :) </label></input></li>
+         <li class="checkbox"><label><input type="checkbox" id="tv" value="7"> Professional TV watching </label></input></li>
+       </ul>
+       <!-- comments -->
+       <label for="comment" class="labels"> Any Comments or Suggestions? </label>
+       <div>
+       <textarea name="comment" rows="8" columns="80" class="input right" placeholder="Enter comments here..."></textarea>
+       </div>
+       <br> </br>
+       <button id="submit" type="submit"> Submit </button>
+         
+           
+           </div>
+       </form>
+</body>
+</html>
